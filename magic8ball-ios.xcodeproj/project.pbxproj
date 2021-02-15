@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,19 @@
 		15AF57A125D5BA3F00DB1423 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AF57A025D5BA3F00DB1423 /* ContentView.swift */; };
 		15AF57A325D5BA4000DB1423 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15AF57A225D5BA4000DB1423 /* Assets.xcassets */; };
 		15AF57A625D5BA4000DB1423 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15AF57A525D5BA4000DB1423 /* Preview Assets.xcassets */; };
+		15C2778B25DAA82E00F44448 /* MagicBallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C2778A25DAA82E00F44448 /* MagicBallView.swift */; };
+		15C2779425DAC4E000F44448 /* magic8ball_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C2779325DAC4E000F44448 /* magic8ball_iosTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15C2779625DAC4E000F44448 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15AF579325D5BA3F00DB1423 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15AF579A25D5BA3F00DB1423;
+			remoteInfo = "magic8ball-ios";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		15AF579B25D5BA3F00DB1423 /* magic8ball-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "magic8ball-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,10 +32,21 @@
 		15AF57A225D5BA4000DB1423 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15AF57A525D5BA4000DB1423 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		15AF57A725D5BA4000DB1423 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15C2778A25DAA82E00F44448 /* MagicBallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicBallView.swift; sourceTree = "<group>"; };
+		15C2779125DAC4E000F44448 /* magic8ball-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "magic8ball-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15C2779325DAC4E000F44448 /* magic8ball_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magic8ball_iosTests.swift; sourceTree = "<group>"; };
+		15C2779525DAC4E000F44448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		15AF579825D5BA3F00DB1423 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15C2778E25DAC4E000F44448 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				15AF579D25D5BA3F00DB1423 /* magic8ball-ios */,
+				15C2779225DAC4E000F44448 /* magic8ball-iosTests */,
 				15AF579C25D5BA3F00DB1423 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				15AF579B25D5BA3F00DB1423 /* magic8ball-ios.app */,
+				15C2779125DAC4E000F44448 /* magic8ball-iosTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,6 +82,7 @@
 				15AF57A225D5BA4000DB1423 /* Assets.xcassets */,
 				15AF57A725D5BA4000DB1423 /* Info.plist */,
 				15AF57A425D5BA4000DB1423 /* Preview Content */,
+				15C2778A25DAA82E00F44448 /* MagicBallView.swift */,
 			);
 			path = "magic8ball-ios";
 			sourceTree = "<group>";
@@ -67,6 +93,15 @@
 				15AF57A525D5BA4000DB1423 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		15C2779225DAC4E000F44448 /* magic8ball-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				15C2779325DAC4E000F44448 /* magic8ball_iosTests.swift */,
+				15C2779525DAC4E000F44448 /* Info.plist */,
+			);
+			path = "magic8ball-iosTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,6 +124,24 @@
 			productReference = 15AF579B25D5BA3F00DB1423 /* magic8ball-ios.app */;
 			productType = "com.apple.product-type.application";
 		};
+		15C2779025DAC4E000F44448 /* magic8ball-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15C2779825DAC4E000F44448 /* Build configuration list for PBXNativeTarget "magic8ball-iosTests" */;
+			buildPhases = (
+				15C2778D25DAC4E000F44448 /* Sources */,
+				15C2778E25DAC4E000F44448 /* Frameworks */,
+				15C2778F25DAC4E000F44448 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15C2779725DAC4E000F44448 /* PBXTargetDependency */,
+			);
+			name = "magic8ball-iosTests";
+			productName = "magic8ball-iosTests";
+			productReference = 15C2779125DAC4E000F44448 /* magic8ball-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -97,14 +150,19 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = simonberner.dev;
 				TargetAttributes = {
 					15AF579A25D5BA3F00DB1423 = {
 						CreatedOnToolsVersion = 12.4;
 					};
+					15C2779025DAC4E000F44448 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 15AF579A25D5BA3F00DB1423;
+					};
 				};
 			};
 			buildConfigurationList = 15AF579625D5BA3F00DB1423 /* Build configuration list for PBXProject "magic8ball-ios" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -117,6 +175,7 @@
 			projectRoot = "";
 			targets = (
 				15AF579A25D5BA3F00DB1423 /* magic8ball-ios */,
+				15C2779025DAC4E000F44448 /* magic8ball-iosTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +190,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		15C2778F25DAC4E000F44448 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,11 +205,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				15AF57A125D5BA3F00DB1423 /* ContentView.swift in Sources */,
+				15C2778B25DAA82E00F44448 /* MagicBallView.swift in Sources */,
 				15AF579F25D5BA3F00DB1423 /* magic8ball_iosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		15C2778D25DAC4E000F44448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15C2779425DAC4E000F44448 /* magic8ball_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15C2779725DAC4E000F44448 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15AF579A25D5BA3F00DB1423 /* magic8ball-ios */;
+			targetProxy = 15C2779625DAC4E000F44448 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		15AF57A825D5BA4000DB1423 /* Debug */ = {
@@ -272,7 +355,7 @@
 				DEVELOPMENT_TEAM = XLY4UW5GHZ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "magic8ball-ios/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,7 +378,7 @@
 				DEVELOPMENT_TEAM = XLY4UW5GHZ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "magic8ball-ios/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +388,46 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		15C2779925DAC4E000F44448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XLY4UW5GHZ;
+				INFOPLIST_FILE = "magic8ball-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.simonberner.magic8ball-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/magic8ball-ios.app/magic8ball-ios";
+			};
+			name = Debug;
+		};
+		15C2779A25DAC4E000F44448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XLY4UW5GHZ;
+				INFOPLIST_FILE = "magic8ball-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.simonberner.magic8ball-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/magic8ball-ios.app/magic8ball-ios";
 			};
 			name = Release;
 		};
@@ -325,6 +448,15 @@
 			buildConfigurations = (
 				15AF57AB25D5BA4000DB1423 /* Debug */,
 				15AF57AC25D5BA4000DB1423 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15C2779825DAC4E000F44448 /* Build configuration list for PBXNativeTarget "magic8ball-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15C2779925DAC4E000F44448 /* Debug */,
+				15C2779A25DAC4E000F44448 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
