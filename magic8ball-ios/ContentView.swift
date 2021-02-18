@@ -17,7 +17,7 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     .padding()
                 Spacer()
-                MagicBallView(n: magicBallNumber)
+                MagicBallView(number: magicBallNumber)
                 Spacer()
                 Button(action: { //action closure ()
                     self.magicBallNumber = Int.random(in: 1...5)
